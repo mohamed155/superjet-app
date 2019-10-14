@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="art-container">
+    <div class="art-top-page"></div>
+  </div>
+  <div class="page-title" text-center>
+    <img src="assets/imgs/logo.png" alt="logo">
+  </div>
+  <div class="form-container">
+    <form #f="ngForm">
+      <ion-item no-lines>
+        <ion-label stacked>اسم المستخدم</ion-label>
+        <ion-input name="firstname"></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>رقم سري</ion-label>
+        <ion-input name="password" type="Password"></ion-input>
+      </ion-item>
+      <ion-item no-lines class="item-button">
+        <button ion-button clear block padding type="button">إنشاء حساب جديد</button>
+      </ion-item>
+      <p class="text-separator" text-center no-margin color="light">أو</p>
+      <ion-item no-lines class="facebook-button-item">
+        <button ion-button type="button" round block color="facebook">
+          <ion-icon name="logo-facebook"></ion-icon>
+          الاتصال بحساب الفيس بوك
+        </button>
+      </ion-item>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer text-center>
+  <button ion-button type="submit" class="submit-button" color="light" round large>دخول</button>
+</ion-footer>

@@ -39,12 +39,19 @@ $text-input-md-show-invalid-highlight: $text-input-md-show-focus-highlight !defa
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #7999EF,
-  secondary:  #32db64,
+  primary:    #CC9900,
+  primary-light: #FBBD03,
+  primary-dark: #F7991E,
+
+  secondary:  #29FF00,
+  secondary-dark: #00FF77,
+
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #ffffff,
   dark:       #222,
   text-grey: #949494,
+  line-grey: #707070,
+
   facebook: #3b5998
 );
 
