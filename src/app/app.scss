@@ -34,4 +34,12 @@
   border-radius: 19px;
   padding: 5px 10px;
   border: solid 1px #E9E5E5;
+  color: color($colors, 'light');
+}
+
+.footer {
+
+  &::before {
+    content: none;
+  }
 }
