@@ -11,4 +11,8 @@ export class SignupPage {
 
   }
 
+  onGoBack() {
+    this.navCtrl.pop();
+  }
+
 }

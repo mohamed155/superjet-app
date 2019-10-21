@@ -18,7 +18,7 @@ page-signup {
         height: 286px;
         position: absolute;
         left: -10%;
-        top: -100px;
+        top: -150px;
         transform: rotate(11deg);
         z-index: -1;
         border-bottom: solid 1px rgba(color($colors, 'line-grey'), 0.5);
@@ -28,6 +28,33 @@ page-signup {
 
     .page-title {
       padding: 30px;
+      padding-bottom: 0;
+
+      > img {
+        width: 95px;
+      }
+
+      .back-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .title {
+        color: color($colors, 'light');
+
+        * {
+          margin: 0;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        h2 {
+          font-size: 35px;
+        }
+      }
     }
 
     .button {
@@ -36,6 +63,7 @@ page-signup {
 
     .form-container {
       padding: 40px;
+      padding-top: 0;
 
       .facebook-button-item {
         background-color: transparent;
