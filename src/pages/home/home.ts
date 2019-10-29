@@ -8,6 +8,9 @@ import {LoginPage} from "../login/login";
 })
 export class HomePage {
 
+  tab = "leave";
+  fromCity;
+
   constructor(public navCtrl: NavController) {
 
   }
