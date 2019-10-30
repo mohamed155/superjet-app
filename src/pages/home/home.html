@@ -62,21 +62,21 @@
       <ion-label>ميعاد العودة</ion-label>
       <ion-datetime displayFormat="MMMM D"></ion-datetime>
     </ion-item>
-    <button ion-button type="submit" class="submit-button" color="light" round large block>بحث عن رحلة</button>
+    <button ion-button type="submit" class="submit-button" color="light" round large block (click)="open()">بحث عن رحلة</button>
   </div>
 </ion-content>
 
 <ion-footer text-center>
   <div class="footer-nav">
-    <button ion-button clear>
+    <button ion-button clear (click)="open()">
       <img src="assets/imgs/Group%20280.png" alt="ticket">
     </button>
     <div class="vertical-separator"></div>
-    <button ion-button clear>
+    <button ion-button clear (click)="open()">
       <img src="assets/imgs/home-icon-silhouette.png" alt="ticket">
     </button>
     <div class="vertical-separator"></div>
-    <button ion-button clear>
+    <button ion-button clear (click)="open()">
       <img src="assets/imgs/account-circle.png" alt="ticket">
     </button>
   </div>
