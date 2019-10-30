@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {LoginPage} from "../login/login";
+import {MenuPage} from "../menu/menu";
 
 @Component({
   selector: 'page-home',
@@ -8,7 +9,7 @@ import {LoginPage} from "../login/login";
 })
 export class HomePage {
 
-  tab = "leave";
+  type = "leave";
   fromCity;
 
   constructor(public navCtrl: NavController) {
@@ -17,6 +18,10 @@ export class HomePage {
 
   onGoBack() {
     this.navCtrl.setRoot(LoginPage);
+  }
+
+  openMenu() {
+    this.navCtrl.push(MenuPage);
   }
 
 }

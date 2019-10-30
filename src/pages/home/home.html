@@ -6,7 +6,7 @@
     <button ion-button clear icon-only class="back-btn" (click)="onGoBack()">
       <img src="assets/imgs/back-icon.png" alt="back">
     </button>
-    <button ion-button clear icon-only class="menu-btn" (click)="onGoBack()">
+    <button ion-button clear icon-only class="menu-btn" (click)="openMenu()">
       <img src="assets/imgs/list.png" alt="back">
     </button>
     <img src="assets/imgs/logo-white.png" alt="logo">
@@ -16,7 +16,7 @@
   </div>
   <div class="form-container">
     <h1 margin-bottom>احجز مقعدك الان</h1>
-    <ion-segment margin-buttom class="segment-ios" [ngClass]="{'segment-md': false}" [(ngModel)]="tab">
+    <ion-segment margin-buttom class="segment-ios" [ngClass]="{'segment-md': false}" [(ngModel)]="type">
       <ion-segment-button value="leave">
         ذهاب فقط
       </ion-segment-button>
@@ -54,9 +54,30 @@
         </ion-option>
       </ion-select>
     </ion-item>
+    <ion-item no-lines margin-top>
+      <ion-label>ميعاد الحجز</ion-label>
+      <ion-datetime displayFormat="MMMM D"></ion-datetime>
+    </ion-item>
+    <ion-item no-lines margin-top *ngIf="type == 'leaveAndBack'">
+      <ion-label>ميعاد العودة</ion-label>
+      <ion-datetime displayFormat="MMMM D"></ion-datetime>
+    </ion-item>
+    <button ion-button type="submit" class="submit-button" color="light" round large block>بحث عن رحلة</button>
   </div>
 </ion-content>
 
 <ion-footer text-center>
-  <button ion-button type="submit" class="submit-button" color="light" round large>تسجيل</button>
+  <div class="footer-nav">
+    <button ion-button clear>
+      <img src="assets/imgs/Group%20280.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear>
+      <img src="assets/imgs/home-icon-silhouette.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear>
+      <img src="assets/imgs/account-circle.png" alt="ticket">
+    </button>
+  </div>
 </ion-footer>

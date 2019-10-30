@@ -1,4 +1,4 @@
-page-home {
+page-menu {
   .content {
     &::before {
       content: "";
@@ -24,6 +24,8 @@ page-home {
     }
 
     .page-title {
+      margin-bottom: 70px;
+
       > img {
         margin-left: 30px;
       }
@@ -54,6 +56,19 @@ page-home {
 
         h2 {
           font-size: 35px;
+        }
+      }
+    }
+
+    .menu-list {
+      .button {
+        height: 60px;
+        position: relative;
+        left: -30px;
+
+        .button-inner {
+          justify-content: left;
+          margin-left: 20px;
         }
       }
     }
