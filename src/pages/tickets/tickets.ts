@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {ProfilePage} from "../profile/profile";
 
 @Component({
-  selector: 'page-menu',
-  templateUrl: 'menu.html'
+  selector: 'page-tickets',
+  templateUrl: 'tickets.html'
 })
-export class MenuPage {
+export class TicketsPage {
 
   constructor(public navCtrl: NavController) {
 
@@ -19,4 +20,11 @@ export class MenuPage {
     this.navCtrl.popToRoot();
   }
 
+  openTickets() {
+    this.navCtrl.push(TicketsPage);
+  }
+
+  openProfile() {
+    this.navCtrl.push(ProfilePage);
+  }
 }

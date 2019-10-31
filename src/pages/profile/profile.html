@@ -8,23 +8,28 @@
     </button>
     <img src="assets/imgs/logo.png" alt="logo">
     <!--<div class="title" text-center>-->
-      <!--<h1>Lena</h1>-->
+    <!--<h1>Lena</h1>-->
     <!--</div>-->
   </div>
-  <div class="menu-list">
-    <button ion-button large round block padding-vertical margin-vertical>Station</button>
-    <button ion-button large round block padding-vertical margin-vertical>Routes</button>
-    <button ion-button large round block padding-vertical margin-vertical>Bus Classes</button>
-    <button ion-button large round block padding-vertical margin-vertical>Cancellation and Refund</button>
-    <button ion-button large round block padding-vertical margin-vertical>Privacy Policy</button>
-    <button ion-button large round block padding-vertical margin-vertical>About</button>
+
+  <div class="page-content" text-center>
+    <div class="profile-pic">
+      <img src="assets/imgs/download.png" alt="avatar">
+      <h5>Lena</h5>
+    </div>
+
+    <h6 text-center>LENA12@YAHOO.com</h6>
+    <h6 text-center>010546452</h6>
+
+    <button ion-button clear large color="light" class="logout-btn" (click)="logout()">خروج</button>
   </div>
+
 </ion-content>
 
 <ion-footer text-center>
   <div class="footer-nav">
     <button ion-button clear>
-      <img src="assets/imgs/Group%20280.png" alt="ticket">
+      <img src="assets/imgs/Group%20280.png" alt="ticket" (click)="openTickets()">
     </button>
     <div class="vertical-separator"></div>
     <button ion-button clear (click)="openHome()">

@@ -9,6 +9,13 @@ import {HomePage} from '../pages/home/home';
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {MenuPage} from "../pages/menu/menu";
+import {ProfilePage} from "../pages/profile/profile";
+import {TicketsPage} from "../pages/tickets/tickets";
+import {ToursPage} from "../pages/tours/tours";
+import {TourReservePage} from "../pages/tour-reserve/tour-reserve";
+import {SeatBtn} from "../components/seat-btn/seat-button";
+import {ConfirmReservationPage} from "../pages/confirm-reservation/confirm-reservation";
+
 
 
 @NgModule({
@@ -17,7 +24,13 @@ import {MenuPage} from "../pages/menu/menu";
     HomePage,
     LoginPage,
     SignupPage,
-    MenuPage
+    MenuPage,
+    ProfilePage,
+    TicketsPage,
+    ToursPage,
+    TourReservePage,
+    SeatBtn,
+    ConfirmReservationPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +42,13 @@ import {MenuPage} from "../pages/menu/menu";
     HomePage,
     LoginPage,
     SignupPage,
-    MenuPage
+    MenuPage,
+    ProfilePage,
+    TicketsPage,
+    ToursPage,
+    TourReservePage,
+    SeatBtn,
+    ConfirmReservationPage
   ],
   providers: [
     StatusBar,

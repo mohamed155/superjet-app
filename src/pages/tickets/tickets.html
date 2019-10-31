@@ -7,18 +7,19 @@
       <img src="assets/imgs/back-icon.png" alt="back">
     </button>
     <img src="assets/imgs/logo.png" alt="logo">
-    <!--<div class="title" text-center>-->
-      <!--<h1>Lena</h1>-->
-    <!--</div>-->
+    <div class="title" text-center>
+      <h1>Lena</h1>
+    </div>
   </div>
-  <div class="menu-list">
-    <button ion-button large round block padding-vertical margin-vertical>Station</button>
-    <button ion-button large round block padding-vertical margin-vertical>Routes</button>
-    <button ion-button large round block padding-vertical margin-vertical>Bus Classes</button>
-    <button ion-button large round block padding-vertical margin-vertical>Cancellation and Refund</button>
-    <button ion-button large round block padding-vertical margin-vertical>Privacy Policy</button>
-    <button ion-button large round block padding-vertical margin-vertical>About</button>
+
+  <div class="page-content" text-center>
+    <div class="placeholder-image" text-center>
+      <img src="assets/imgs/ticket.png" alt="ticket">
+    </div>
+    <h1>لا يوجد تذاكر الان</h1>
+    <button ion-button round color="secondary" margin padding large (click)="openHome()">احجز الان</button>
   </div>
+
 </ion-content>
 
 <ion-footer text-center>
@@ -31,7 +32,7 @@
       <img src="assets/imgs/home-icon-silhouette.png" alt="ticket">
     </button>
     <div class="vertical-separator"></div>
-    <button ion-button clear>
+    <button ion-button clear (click)="openProfile()">
       <img src="assets/imgs/account-circle.png" alt="ticket">
     </button>
   </div>

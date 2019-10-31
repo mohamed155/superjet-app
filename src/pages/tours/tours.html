@@ -1,0 +1,169 @@
+<ion-content>
+  <div class="art-container">
+    <div class="art-top-page"></div>
+    <div class="art-down-page"></div>
+  </div>
+  <div class="page-title" text-center>
+    <button ion-button clear icon-only class="back-btn" (click)="onGoBack()">
+      <img src="assets/imgs/back-icon.png" alt="back">
+    </button>
+    <img src="assets/imgs/logo.png" alt="logo">
+    <div class="title" text-center>
+      <h1>الرحلات المتاحة</h1>
+      <h3 no-margin>الاحد 9 سبتمبر</h3>
+      <ion-row justify-content-center>
+        <ion-col col-4>
+          <p>من</p>
+          <h1 no-margin class="city">مدينة</h1>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col col-4>
+          <p>الى</p>
+          <h1 no-margin class="city">مدينة</h1>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="tours-list">
+      <button ion-button clear (click)="openTour('economic')" class="tour-btn economic">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture-economic.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+      <button ion-button clear (click)="openTour('deluxe-plus')" class="tour-btn deluxe-plus">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+      <button ion-button clear (click)="openTour('elite-plus')" class="tour-btn elite-plus">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture-elite-plus.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+      <button ion-button clear (click)="openTour('new-deluxe')" class="tour-btn new-deluxe">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture-new-deluxe.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+      <button ion-button clear (click)="openTour('elite-dd')" class="tour-btn elite-dd">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture-dd.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+      <button ion-button clear (click)="openTour('aero')" class="tour-btn aero">
+        <div class="back-arts">
+          <div class="first-art"></div>
+          <div class="second-art"></div>
+        </div>
+        <p class="seats-title">12 seats available</p>
+        <div class="tour-row">
+          <img src="assets/imgs/bus.png">
+          <div class="tour-info">
+            <img src="assets/imgs/picture-aero.png">
+            <div class="tour-label">DELUXE PLUS</div>
+            <p class="tour-nubmer">#1221221</p>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="tour-data">
+            <h1 class="time">1:35 <sub>AM</sub></h1>
+            <h5 class="price">100 EGP</h5>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer text-center>
+  <div class="footer-nav">
+    <button ion-button clear (click)="openTickets()">
+      <img src="assets/imgs/Group%20280.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear (click)="openHome()">
+      <img src="assets/imgs/home-icon-silhouette.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear (click)="openProfile()">
+      <img src="assets/imgs/account-circle.png" alt="ticket">
+    </button>
+  </div>
+</ion-footer>

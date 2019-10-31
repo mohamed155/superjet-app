@@ -1,4 +1,4 @@
-page-home {
+page-tickets {
   .content {
     &::before {
       content: "";
@@ -24,6 +24,8 @@ page-home {
     }
 
     .page-title {
+      margin-bottom: 70px;
+
       > img {
         margin-left: 30px;
       }
@@ -54,6 +56,54 @@ page-home {
 
         h2 {
           font-size: 35px;
+        }
+      }
+    }
+
+    .page-content {
+
+      * {
+        color: color($colors, 'light');
+      }
+
+      .profile-pic {
+        display: inline-block;
+        margin: auto;
+        padding: 80px;
+        border-radius: 133px;
+        background: color($colors, 'primary');
+        position: relative;
+
+        img {
+          width: 100px;
+        }
+
+        h5 {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .button {
+        padding: 20px 50px;
+
+        .button-inner {
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .menu-list {
+      .button {
+        height: 60px;
+        position: relative;
+        left: -30px;
+
+        .button-inner {
+          justify-content: left;
+          margin-left: 20px;
         }
       }
     }

@@ -1,0 +1,16 @@
+seat-button {
+  .button {
+    height: unset !important;
+    width: 64px !important;
+    min-width: 64px !important;
+    min-height: 56px !important;
+    max-width: 64px !important;
+    max-height: 56px !important;
+    padding: 0 !important;
+
+    img {
+      min-width: 64px !important;
+      min-height: 56px !important;
+    }
+  }
+}

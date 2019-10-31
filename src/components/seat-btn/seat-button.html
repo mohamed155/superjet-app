@@ -1,0 +1,5 @@
+<button ion-button clear (click)="select()">
+  <img src="assets/imgs/Group%20112.png" alt="seat" *ngIf="status == 'available'">
+  <img src="assets/imgs/Group%20111.png" alt="seat" *ngIf="status == 'reserved'">
+  <img src="assets/imgs/Group%20152.png" alt="seat" *ngIf="status == 'selected'">
+</button>

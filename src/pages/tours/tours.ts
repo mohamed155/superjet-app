@@ -4,23 +4,20 @@ import {LoginPage} from "../login/login";
 import {MenuPage} from "../menu/menu";
 import {ProfilePage} from "../profile/profile";
 import {TicketsPage} from "../tickets/tickets";
-import {ToursPage} from "../tours/tours";
+import {TourReservePage} from "../tour-reserve/tour-reserve";
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-tours',
+  templateUrl: 'tours.html'
 })
-export class HomePage {
-
-  type = "leave";
-  fromCity;
+export class ToursPage {
 
   constructor(public navCtrl: NavController) {
 
   }
 
   onGoBack() {
-    this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.pop();
   }
 
   openMenu() {
@@ -35,8 +32,12 @@ export class HomePage {
     this.navCtrl.push(TicketsPage);
   }
 
-  openTours() {
-    this.navCtrl.push(ToursPage);
+  openTour(tourClass) {
+    this.navCtrl.push(TourReservePage, {tourClass: tourClass});
+  }
+
+  openHome() {
+    this.navCtrl.popToRoot();
   }
 
 }
