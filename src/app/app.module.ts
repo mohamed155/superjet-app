@@ -15,6 +15,7 @@ import {ToursPage} from "../pages/tours/tours";
 import {TourReservePage} from "../pages/tour-reserve/tour-reserve";
 import {SeatBtn} from "../components/seat-btn/seat-button";
 import {ConfirmReservationPage} from "../pages/confirm-reservation/confirm-reservation";
+import { PaymentMethodPage } from '../pages/payment-method/payment-method';
 
 
 
@@ -30,7 +31,8 @@ import {ConfirmReservationPage} from "../pages/confirm-reservation/confirm-reser
     ToursPage,
     TourReservePage,
     SeatBtn,
-    ConfirmReservationPage
+    ConfirmReservationPage,
+    PaymentMethodPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import {ConfirmReservationPage} from "../pages/confirm-reservation/confirm-reser
     ToursPage,
     TourReservePage,
     SeatBtn,
-    ConfirmReservationPage
+    ConfirmReservationPage,
+    PaymentMethodPage
   ],
   providers: [
     StatusBar,

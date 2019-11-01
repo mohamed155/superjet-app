@@ -4,13 +4,12 @@ import {LoginPage} from "../login/login";
 import {MenuPage} from "../menu/menu";
 import {ProfilePage} from "../profile/profile";
 import {TicketsPage} from "../tickets/tickets";
-import { PaymentMethodPage } from '../payment-method/payment-method';
 
 @Component({
-  selector: 'page-confirm-reservation',
-  templateUrl: 'confirm-reservation.html'
+  selector: 'page-payment-method',
+  templateUrl: 'payment-method.html'
 })
-export class ConfirmReservationPage {
+export class PaymentMethodPage {
 
   tourClass = '';
 
@@ -36,10 +35,6 @@ export class ConfirmReservationPage {
 
   openHome() {
     this.navCtrl.popToRoot();
-  }
-
-  openPayment() {
-    this.navCtrl.push(PaymentMethodPage);
   }
 
 }

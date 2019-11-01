@@ -1,0 +1,59 @@
+<ion-content>
+  <div class="art-container">
+    <div class="art-top-page"></div>
+  </div>
+  <div class="page-title" text-center>
+    <button ion-button clear icon-only class="back-btn" (click)="onGoBack()">
+      <img src="assets/imgs/back-icon.png" alt="back">
+    </button>
+    <img src="assets/imgs/logo.png" alt="logo">
+    <div class="title" text-center>
+      <h3 no-margin>الاحد 9 سبتمبر</h3>
+      <ion-row justify-content-center>
+        <ion-col col-4>
+          <p>من</p>
+          <h1 no-margin class="city">مدينة</h1>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col col-4>
+          <p>الى</p>
+          <h1 no-margin class="city">مدينة</h1>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <div class="page-content" text-center>
+    <div class="payment-methods" text-center>
+      <button ion-button clear>
+        <img src="assets/imgs/fawry-ar1.png" alt="fawry">
+      </button>
+      <button ion-button clear>
+        <img src="assets/imgs/aman.png" alt="fawry">
+      </button>
+      <button ion-button clear>
+        <img src="assets/imgs/Group 263.png" alt="fawry">
+      </button>
+      <button ion-button clear>
+        <img src="assets/imgs/Group 265.png" alt="fawry">
+      </button>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer text-center>
+  <div class="footer-nav">
+    <button ion-button clear (click)="openTickets()">
+      <img src="assets/imgs/Group%20280.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear (click)="openHome()">
+      <img src="assets/imgs/home-icon-silhouette.png" alt="ticket">
+    </button>
+    <div class="vertical-separator"></div>
+    <button ion-button clear (click)="openProfile()">
+      <img src="assets/imgs/account-circle.png" alt="ticket">
+    </button>
+  </div>
+</ion-footer>
